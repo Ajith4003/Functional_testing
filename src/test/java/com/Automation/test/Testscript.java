@@ -10,6 +10,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Testscript  implements Properties{
 
 	public static void main(String[] args) throws InterruptedException,IOException {
+		
+		/* i create the three class
+		 * Testscripet- i write the TestCase hear
+		 * Properties - this is a interface class i store the liks-url-delay time -Dimensions-username -password
+		 * Screenshot - hear   write  Screenshot program and location 
+		 * handle one popup */
 
 		WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
@@ -43,7 +49,7 @@ public class Testscript  implements Properties{
 		Screenshort.caputecher(driver,"image.jpeg");  
 
 		System.out.println("process complected");
-
+		//Quit the browser
 		driver.quit();
 
 
